@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Praan's RPS </title>
+    <link rel="stylesheet" href="styles/12-rockpaper.css">
+  </head>
+  <body>
+    <p class="title"> Welcome to Rock Paper Scissors game</p>
+    <div class="buttons">
+    <p> 
+      <button onclick="playGame('rock');" class="move-button"><img src="images/rock img.png" class="move-icon" ></button>
+      <button onclick="playGame('paper');" class="move-button"> <img src="images/paper img.png" class="move-icon"></button>
+      <button onclick="playGame('scissors')" class="move-button"> <img src="images/scissors img.png" class="move-icon"></button>
+    </p>
+    </div>
+
+      <p class="js-result result"> </p>
+      <p class="js-moves result-moves" > </p>
+      <p class="js-score score"> </p>
+      <button onclick=" score.wins = 0; score.losses=0; score.ties=0;
+      localStorage.removeItem('score');
+      updateScoreElement();
+        alert(`Score was reset.
+Wins : ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`)" class="reset-score-button"> Reset Score</button>
+      <button class="auto-play-button autoplay">Auto Play</button>
+    </p>
+    <script src="scripts/12-rockpaper.js"></script>
+  </body>
+</html>
